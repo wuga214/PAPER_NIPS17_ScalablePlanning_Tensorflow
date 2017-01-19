@@ -1,2 +1,2 @@
-model_checkpoint_path: "/home/wuga/Documents/Notebook/VAE-PLANNING/WEIGHTS_FOLDER/REWARD_NET.chkp"
-all_model_checkpoint_paths: "/home/wuga/Documents/Notebook/VAE-PLANNING/WEIGHTS_FOLDER/REWARD_NET.chkp"
+model_checkpoint_path: "/home/wuga/Documents/Notebook/VAE-PLANNING/WEIGHTS_FOLDER/TRANSITION_NET.chkp"
+all_model_checkpoint_paths: "/home/wuga/Documents/Notebook/VAE-PLANNING/WEIGHTS_FOLDER/TRANSITION_NET.chkp"
