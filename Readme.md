@@ -4,21 +4,14 @@ Tensorflow Coding Examples
 GA WU, PhD candidate, University of Toronto.
 
 # Introduction
-The code were generated for my research projects, but as a byproduct, they are complete and standard tensorflow implementations of Deep Learning. I code them in Object Orientated Programming(OOP) style, which hopely is easy for people to understand. I am more than happy to share them as a tutorial examples for people who struggling to learn Tensorflow. If you are going to use this code directly into your project and has some questions, please contact me through email or linkedin. I am always happy to help.
+Tensorflow is not only an well designed deep learning toolbox, but also a standard symbolic programming framework. In this repository, we show how to use tensorflow to do classical planning task on deterministic, continous action, continous space problems. Our investigation has two phrases.
+1. We first parse domains that descripted by standard domain description language into Tensorflow, and directly do planning on the hard coded domains. The domain description language can be: PDDL, PDDL2 and RDDL. We think RDDL has much powerful expressive ability, so in the code, if there is no specific description, we use RDDL.
+2. Because of the ability of learning arbitrary function, neural network can learn the transition function and reward function directly from observed data. We then investigate the ability to learn the model and do planning on learned, approximated model to solve real problem
 
 # What is in the repository
-This repository currently has three network implementations.
+This repository contains following implementations
 
-1. Fully Connected Neural Network
-2. (Conditional) Variational AutoEncoder with "Gating"(used to solve backpropagation problem in near deterministic domain) (Supervised for CondVAE and Unsupervised VAE)
-3. Recurrent Neural Network for Value Function Approximation in Reinforcement Learning (Unsupervised)
-
-# What is the difference with other tutorials
-I personally do not like official tensorflow tutorials, because they do not provide some details on how to implement complete workable networks. The knowledge you can get here include:
-
-1. Save and load trained weights through CSV files
-2. Save and load specific Varibles through Saver
-3. Output single final prediction from the last iteration of RNN but not a sequence of outputs.
-4. Full workable network examples
-
+1. Hard coded domains: There are three hard coded domains in the [HARD_CODED_DOMAINS](HARD_CODED_DOMAINS) folder.
+2. Deep learned model: We provide a framework [DEEP_LEARNED_PLANNING](DEEP_LEARNED_PLANNING) based on Tensorflow rnn cell that allows to learn and plan through sampled data.
+3. Visualization functions:[VIZ](VIZ) Show the behavious of result from planner.
 
