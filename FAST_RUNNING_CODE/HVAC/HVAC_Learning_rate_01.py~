@@ -322,7 +322,7 @@ class ActionOptimizer(object):
         self.loss = objective
         print(self.loss.get_shape())
         #self.loss = -objective
-        self.optimizer = tf.train.RMSPropOptimizer(self.learning_rate).minimize(self.loss, var_list=[a])
+        self.optimizer = tf.train.AdagradOptimizer(self.learning_rate).minimize(self.loss, var_list=[a])
         
     def _p_Q_loss(self):
         print("Q-loss")

@@ -283,7 +283,7 @@ class ActionOptimizer(object):
                 num_step, # Number of RNN step, this is a fixed step RNN sequence, 12 for navigation
                 batch_size,
                 loss,
-                learning_rate=1): 
+                learning_rate=0.001): 
         self.action = tf.reshape(a,[-1,num_step,60]) #Reshape rewards
         print(self.action)
         self.num_step = num_step
@@ -322,7 +322,7 @@ class ActionOptimizer(object):
         self.loss = objective
         print(self.loss.get_shape())
         #self.loss = -objective
-        self.optimizer = tf.train.RMSPropOptimizer(self.learning_rate).minimize(self.loss, var_list=[a])
+        self.optimizer = tf.train.AdadeltaOptimizer(self.learning_rate).minimize(self.loss, var_list=[a])
         
     def _p_Q_loss(self):
         print("Q-loss")
