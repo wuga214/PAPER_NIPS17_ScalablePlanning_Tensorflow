@@ -1,4 +1,4 @@
-Domain_Type,Horizon,GD,MILP,FMC,Heuristic
+Domain_Type,Horizon,TF,MILP,FMC,Heuristic
 Linear,30,-201.7576,-184.4,-1,-244.9999
 Linear,60,-339.3773,-304.22,-1,-469.5
 Linear,120,-545.2414,-453,-1,-867.78
