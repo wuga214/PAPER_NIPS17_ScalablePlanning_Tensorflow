@@ -3,6 +3,10 @@ Tensorflow Coding Examples
 # Author
 GA WU, PhD candidate, University of Toronto.
 
+# Tensorflow Version
+This code was written in Tensorflow beta version 0.12c. If you need to run it in Tensorflow 1.3 or later version. Please see the [PURE_PYTHON_CODE](PURE_PYTHON_CODE)
+
+
 # Introduction
 Tensorflow is not only an well designed deep learning toolbox, but also a standard symbolic programming framework. In this repository, we show how to use tensorflow to do classical planning task on deterministic, continous action, continous space problems. Our investigation has two phrases.
 1. We first parse domains that descripted by standard domain description language into Tensorflow, and directly do planning on the hard coded domains. The domain description language can be: PDDL, PDDL2 and RDDL. We think RDDL has much powerful expressive ability, so in the code, if there is no specific description, we use RDDL.
