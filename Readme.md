@@ -16,6 +16,10 @@ Tensorflow is not only an well designed deep learning toolbox, but also a standa
 This repository contains following implementations
 
 1. Hard coded domains: There are three hard coded domains in the [HARD_CODED_DOMAINS](HARD_CODED_DOMAINS) folder.
-2. Deep learned model: We provide a framework [DEEP_LEARNED_PLANNING](DEEP_LEARNED_PLANNING) based on Tensorflow rnn cell that allows to learn and plan through sampled data.
+2. Deep learned model: We provide a framework [DEEP_LEARNED_PLANNING](DEEP_LEARNED_PLANNING) based on Tensorflow rnn cell that allows to learn and plan through sampled data. (This code is re-wroten in another repository, see below)
 3. Visualization functions:[VIZ](VIZ) Show the behavious of result from planner.
 
+# Planning With Neural Network Trained Transition Function
+Because the tensorflow upgrade recent days, the old method to customize RNN cell has been deprecated. We re-wrote the tensorflow planner for trained transition function in the following repository. Please please directly copy the command in repository to test its functionality.
+
+[TensorFlow Planner for Trained Transition Function](https://github.com/wuga214/PlanningThroughTensorFlow)
